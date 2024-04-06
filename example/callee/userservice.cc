@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
 #include "user.pb.h"
-
-
+#include"mprpcapplication.h"
+#include"rpcprovider.h"
 class UserService : public fixbug::UserServiceRpc
 {
 public:
@@ -35,9 +35,15 @@ public:
 };
 
 
-int main()
+int main(int argc , char** argv)
 {
-
-
+    //调用框架的初始化
+    MprpcApplication::Init(argc,argv);
+    //provider是个网络对象，用于把该框架发布在网络
+    RpcProvider provider;
+    //发布
+    provider.NotifyService(new UserService()); 
+    //启动，监听
+    provider.Run();
     return 0;
 }
