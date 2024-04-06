@@ -1,0 +1,6 @@
+/home/jianger/project/mprpc/build/CMakeFiles/rebuild_cache.dir
+/home/jianger/project/mprpc/build/CMakeFiles/edit_cache.dir
+/home/jianger/project/mprpc/build/example/CMakeFiles/rebuild_cache.dir
+/home/jianger/project/mprpc/build/example/CMakeFiles/edit_cache.dir
+/home/jianger/project/mprpc/build/example/callee/CMakeFiles/rebuild_cache.dir
+/home/jianger/project/mprpc/build/example/callee/CMakeFiles/edit_cache.dir
