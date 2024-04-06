@@ -1,5 +1,5 @@
 # pragma once
-
+#include"mprpcconfig.h"
 class MprpcApplication
 {
 
@@ -8,6 +8,7 @@ public:
     static MprpcApplication& GetInstance();
 
 private:
+    static MprpcConfig m_config;
     MprpcApplication(){}
     MprpcApplication(const MprpcApplication&) = delete;
     MprpcApplication(const MprpcApplication&&) = delete;
